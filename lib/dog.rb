@@ -1,25 +1,14 @@
 class Dog
-  def initialize(breed)
-    @breed = breed
-  end
- 
-  def breed=(breed)
-    @breed = breed
-  end
- 
-  def breed
-    @breed
-  end
   
-  def initialize(name)
+  def initialize(name, breed)
     @name = name
+    @breed = breed
   end
  
-  def name=(name)
+  def name=(full_name)
+    first_name, last_name = full_name.split
     @name = name
+    @breed = breed
   end
  
-  def name
-    @name
-  end
 end
